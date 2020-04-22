@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hello World</title>
+<!--  <script type="module" src="http://localhost:8080/cdn/1.4.0/load.js?lang=fr&components=env-var/env-var-form,atoms/cc-toggle,molecules/cc-error,atoms/cc-button,atoms/cc-input-text"></script>-->
+<!--  <script type="module" src="http://localhost:8080/cdn/1.4.0/load.js?lang=fr&components=overview/cc-tile-requests,maps/cc-logsmap"></script>-->
+<!--  <script type="module" src="https://cellar-c2.services.clever-cloud.com/components/1.4.0/load.js?lang=fr&components=overview/cc-tile-requests,maps/cc-logsmap"></script>-->
+<!--  <script type="module" src="http://localhost:8081/1.4.0/load.js?lang=fr&components=overview/cc-tile-requests,maps/cc-logsmap"></script>-->
+<!--  <script type="module" src="http://localhost:8080/cdn/1.6.0/load.js?lang=fr&components=cc-error,cc-button,env-var-form"></script>-->
+<!--  <script type="module" src="https://localhost:8081/1.4.0/load.js?components=cc-error,cc-button"></script>-->
+  <script type="module" src="https://localhost:8081/1.4.0/load.js?lang=fr&components=cc-error,cc-button,cc-input-text,cc-toggle,cc-logsmap"></script>
+  <style>
+  body {
+    font-family: sans-serif;
+  }
+  </style>
+</head>
+<body>
+
+<a href="./index-foo.html">index foo</a>
+
+<h1>Hello World!</h1>
+
+<h2>Test Error msg</h2>
+
+<cc-error>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat dui at leo porta dignissim. Etiam ut purus ultrices, pulvinar tellus quis, cursus massa. Mauris dignissim accumsan ex, at vestibulum lectus fermentum id. Quisque nec magna arcu. Quisque in metus sed erat sodales euismod eget id purus. Sed sagittis rhoncus mauris. Ut sit amet urna ac nunc semper porta. Nam ut felis eu velit luctus rutrum.</cc-error>
+
+<h2>Test button</h2>
+
+<cc-button>Simple</cc-button>
+<cc-button primary>Primary</cc-button>
+
+<h2>Test text</h2>
+
+<cc-input-text value="foobar" clipboard secret></cc-input-text>
+
+<h2>Test toggle</h2>
+
+<cc-toggle value="PAUL" choices='[{ "label": "John", "value": "JOHN" },{ "label": "Paul", "value": "PAUL" },{ "label": "George", "value": "GEORGE" },{ "label": "Ringo", "value": "RINGO" }]'></cc-toggle>
+
+<!--<h2>Test env vars</h2>-->
+
+<!--<env-var-form variables='[{"name":"foo", "value":"bar"}, {"name":"foofoo", "value":"barbar"}]'></env-var-form>-->
+
+<h2>test chart</h2>
+
+<cc-tile-requests style="width: 400px" data='[
+  [
+    1581638400000,
+    1581642000000,
+    220024
+  ],
+  [
+    1581642000000,
+    1581645600000,
+    220132
+  ],
+  [
+    1581645600000,
+    1581649200000,
+    220088
+  ],
+  [
+    1581649200000,
+    1581652800000,
+    220248
+  ],
+  [
+    1581652800000,
+    1581656400000,
+    220242
+  ],
+  [
+    1581656400000,
+    1581660000000,
+    220101
+  ],
+  [
+    1581660000000,
+    1581663600000,
+    220092
+  ],
+  [
+    1581663600000,
+    1581667200000,
+    220011
+  ],
+  [
+    1581667200000,
+    1581670800000,
+    220736
+  ],
+  [
+    1581670800000,
+    1581674400000,
+    220521
+  ],
+  [
+    1581674400000,
+    1581678000000,
+    220098
+  ],
+  [
+    1581678000000,
+    1581681600000,
+    220881
+  ],
+  [
+    1581681600000,
+    1581685200000,
+    220024
+  ],
+  [
+    1581685200000,
+    1581688800000,
+    220132
+  ],
+  [
+    1581688800000,
+    1581692400000,
+    220088
+  ],
+  [
+    1581692400000,
+    1581696000000,
+    220248
+  ],
+  [
+    1581696000000,
+    1581699600000,
+    220242
+  ],
+  [
+    1581699600000,
+    1581703200000,
+    220101
+  ],
+  [
+    1581703200000,
+    1581706800000,
+    220092
+  ],
+  [
+    1581706800000,
+    1581710400000,
+    220011
+  ],
+  [
+    1581710400000,
+    1581714000000,
+    220736
+  ],
+  [
+    1581714000000,
+    1581717600000,
+    220521
+  ],
+  [
+    1581717600000,
+    1581721200000,
+    220098
+  ],
+  [
+    1581721200000,
+    1581724800000,
+    220881
+  ]
+]'></cc-tile-requests>
+
+<h2>test map</h2>
+
+<cc-logsmap style="width: 400px" orga-name="ACME Inc."></cc-logsmap>
+
+</body>
+</html>
